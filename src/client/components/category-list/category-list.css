@@ -1,0 +1,11 @@
+
+.category-list li{
+  cursor: pointer;
+  list-style-type:none;
+}
+
+.category-list .list-group-item:hover {
+  background-color: #444;
+
+  list-style-type:none;
+}

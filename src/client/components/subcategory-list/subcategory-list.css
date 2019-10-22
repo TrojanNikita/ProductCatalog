@@ -1,0 +1,7 @@
+.subcategory-list .list-group-item {
+  cursor: pointer;
+}
+
+.subcategory-list .list-group-item:hover {
+  background-color: #444;
+}

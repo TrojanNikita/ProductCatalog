@@ -1,5 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { Provider } from 'react-redux';
+import configureStore from './components/stores/configureStore';
+import * as actions from './components/actions';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import AppPage from './components/app';
+
+
+const store = configureStore();
+
+
+ReactDOM.render(
+  <Provider store={store}>
+      <AppPage />
+  </Provider>,
+  document.getElementById('root'));
+
+module.hot.accept();
